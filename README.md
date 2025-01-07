@@ -6,6 +6,10 @@ The DOM (Document Object Model) is a way for your browser to **represent a webpa
 
 Think of it as a **tree structure**:
 
+
+![image](https://github.com/user-attachments/assets/4da278ec-0a9a-4721-9ded-a28439904584)
+
+
 - The root of the tree is the `<html>` element.
 - Branches are the other elements like `<head>`, `<body>`, `<div>`, `<p>`, etc.
 - Leaves are the actual content (text, images, etc.) or attributes (like `class`, `id`, `src`).

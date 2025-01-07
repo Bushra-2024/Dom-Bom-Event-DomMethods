@@ -128,5 +128,36 @@ allParagraphs.forEach((p, index) => {
 });
 ```
 
+### Dom Features
+The **Document Object Model (DOM)** represents every HTML tag as an object. These objects include the tags themselves (like `<div>`, `<p>`, etc.), their **children** (subtags), and the **text** inside the tags.
 
+You can manipulate these objects using JavaScript to modify the webpage.
 
+### Key Methods and Properties:
+1. **`querySelector()`**: Returns the first element that matches a specified CSS selector.
+   - Example: `document.querySelector('p')` selects the first `<p>` element.
+
+2. **`querySelectorAll()`**: Returns all elements that match the specified CSS selector.
+   - Example: `document.querySelectorAll('p')` selects all `<p>` elements.
+
+### Key Properties:
+1. **`innerHTML`**: Allows you to get or set the content inside an HTML element. It can completely replace the content of an element.
+   - Example:
+    ``` javascript
+    <div id="example">Old Content</div>
+    <script>
+    document.getElementById('example').innerHTML = 'New Content';
+    </script>
+   ```
+
+2. **`style` Object**: Represents the CSS styles applied to an element. You can use it to modify individual style properties.
+     - Example:
+    ``` javascript
+    <p id="text">This is a text</p>
+   <script>
+   document.getElementById('text').style.color = 'blue';  // Changes text color to blue
+   document.getElementById('text').style.fontSize = '20px';  // Changes font size to 20px
+   </script>
+   ```
+
+Both `innerHTML` and `style` allow you to dynamically modify an element's content and appearance.

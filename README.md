@@ -10,9 +10,23 @@ Think of it as a **tree structure**:
 ![image](https://github.com/user-attachments/assets/4da278ec-0a9a-4721-9ded-a28439904584)
 
 
-- The root of the tree is the `<html>` element.
-- Branches are the other elements like `<head>`, `<body>`, `<div>`, `<p>`, etc.
-- Leaves are the actual content (text, images, etc.) or attributes (like `class`, `id`, `src`).
+
+### Explanation:
+1. **Root Node**:
+   - The `<html>` tag is the root of the tree.
+
+2. **Branches**:
+   - `<head>` and `<body>` are the first-level branches from `<html>`.
+   - Inside `<head>`, there’s a `<title>` tag.
+   - Inside `<body>`, there are:
+     - `<h1>` (heading)
+     - Two `<p>` (paragraphs)
+     - `<img>` (an image element).
+
+3. **Leaves**:
+   - The text content ("DOM Tutorial", "This is a heading", etc.) are the leaves.
+   - Attributes like `src="smiley.gif"` and `alt="Smiley face"` are properties of the `<img>` element.
+
 
 With the DOM, you can do things like:
 - Change content: Replace the text in a `<p>` tag.

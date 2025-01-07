@@ -2,6 +2,33 @@
 
 ![image](https://github.com/user-attachments/assets/449e6603-158c-427d-acc5-ef7c98e7ed9f)
 
+
+# BOM (Browser Object Model) in JavaScript
+
+The **BOM (Browser Object Model)** is a set of objects provided by the browser that allows JavaScript to interact with the browser window, outside of the actual webpage content (which the DOM handles). It provides functionality to work with the browser environment, including managing windows, dialogs, and browser-related data.
+
+
+![image](https://github.com/user-attachments/assets/4c2719af-1c08-43f6-88bb-05affdda6f80)
+
+
+### Key Components of BOM:
+
+- **`window`**: Represents the browser window, providing access to global functions and variables, like `alert`, `confirm`, `setTimeout`, etc.
+
+- **`alert()`**: A method of the `window` object that displays a simple popup dialog box with a message and an "OK" button. It is commonly used for displaying information to the user.
+
+
+### Example of `alert()` in BOM:
+
+```javascript
+// Simple alert example
+alert("Hello, welcome to the page!");
+```
+
+
+
+#  DOM (Document Object Model) in JavaScript
+
 The DOM (Document Object Model) is a way for your browser to **represent a webpage** so that programming languages like JavaScript can interact with it. It’s essentially a structured version of your HTML that JavaScript can read and modify.
 
 Think of it as a **tree structure**:
@@ -100,4 +127,6 @@ allParagraphs.forEach((p, index) => {
   p.textContent = `Paragraph ${index + 1} updated!`;
 });
 ```
+
+
 

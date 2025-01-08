@@ -164,3 +164,45 @@ You can manipulate these objects using JavaScript to modify the webpage.
    ```
 
 Both `innerHTML` and `style` allow you to dynamically modify an element's content and appearance.
+
+
+------
+
+# Dom Events
+
+### **Understanding HTML Events and JavaScript**
+
+HTML events are actions or occurrences that happen to HTML elements on a web page. These events can be triggered either by the **browser** (e.g., when a page finishes loading) or by a **user** (e.g., clicking a button or entering text).
+JavaScript allows us to "listen" for these events and execute specific code in response. This makes web pages interactive and dynamic.
+
+### **Examples of Common HTML Events**
+1. **Page Events**:
+   - The web page finishes loading.
+   - The user resizes the browser window.
+
+2. **User Actions**:
+   - Clicking a button (`onclick` event).
+   - Typing in an input field (`oninput` or `onchange` events).
+   - Hovering over an element (`onmouseover` event).
+
+3. **Form Interactions**:
+   - Submitting a form (`onsubmit` event).
+   - Resetting a form (`onreset` event).
+
+
+### **How JavaScript Reacts to Events**
+JavaScript can detect these events and respond by executing code. This is done by adding **event listeners** or directly using event attributes like `onclick`.
+
+The `onclick` event triggers when an element is clicked. You can use it to execute JavaScript code in response to a user's click action.
+
+### **Example: Button Click Event (`onclick`)**
+```javascript
+// Select an element
+const button = document.getElementById("myButton");
+
+// Add a click event
+button.onclick = function () {
+  alert("Button clicked!");
+};
+```
+
